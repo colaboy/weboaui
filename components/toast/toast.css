@@ -1,0 +1,76 @@
+/*----------------toast(start)--------------*/
+.toast{
+	position:fixed;
+	top:-100px;
+	width:100%;
+	text-align:center;
+
+	-webkit-transition-property:top,opacity,visibility;
+    -webkit-transition-duration:150ms;
+    -webkit-transition-timing-function:ease;
+
+    -moz-transition-property:top,visibility;
+    -moz-transition-duration:150ms;
+    -moz-transition-timing-function:ease;
+
+    -ms-transition-property:top,visibility;
+    -ms-transition-duration:150ms;
+    -ms-transition-timing-function:ease;
+
+    z-index:999;
+}
+.toast.active{
+	top:50px;
+}
+.toast-wrapper{
+	min-width:240px;
+	padding: 0 50px;
+    height: 40px;
+    line-height: 39px;
+	display:inline-block;
+	border-radius:6px;
+	font-size:12px;
+	max-width:90%;
+	overflow:hidden;
+	text-align:center;
+
+	color:white;
+	background-color:rgba(0,0,0,.6);
+}
+.toast.cancel .toast-wrapper{
+	color:white;
+	background-color:#F54D4D;
+	border:1px solid #CC5151;
+}
+.toast.info .toast-wrapper{
+	color:#C09853;
+	background-color:#FCF8E3;
+	border:1px solid #FBEED5;
+}
+.toast.success .toast-wrapper{
+	color:white;
+	background-color:#59D073;
+	border:1px solid #47C462;
+}
+.toast-icon{
+	background-size:cover;
+	width:16px;
+	height:16px;
+	display:inline-block;
+	vertical-align:middle;
+}
+.toast-icon.toast-icon-cancel{
+	background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAKlBMVEXVVVW3R0e3SEi3SEi4R0e4R0e2SEi2R0f////z4uLw29u8Vla4TEz37OzK3uxtAAAAB3RSTlMB89WUjyu9OutiZAAAAFNJREFUCNdjYGAIURRyZQAC5nIgMAAy0kGMMrAARCi8vKa8/Hh5KYN7+dnVu+6UlzCol1d1zlheXsQgXl49o3N7eSGcAZeCK4ZrhxsIswJhKdwZAOUQMYuIEHUpAAAAAElFTkSuQmCC');
+}
+.toast-icon.toast-icon-info{
+	background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAIVBMVEXVqlXAmFTBmFTBmVTBmVTEmlPBmFTAmFP8+OPq3brq3LlOZO16AAAAB3RSTlMB89WUjyu9OutiZAAAAFFJREFUCNdjYGAIURRyZQAC5nIgMAAy0kGMMrBA5XSQUHh5eUV7eXkpgzuEUcKgDmEUMYhDGIVwBkiqcjlIyh1kDEhxOMScUriBMCsQlsKdAQDPAS2wRwHOugAAAABJRU5ErkJggg==');
+}
+.toast-icon.toast-icon-success{
+	background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAPFBMVEUAAABOpGFOpGFOpGBOpGBNpmVVqoBOo2FNo2BPpGH////y+PNRpWTM5NFss3tpsXmWyaLC38hztoK42sDhdVgQAAAACHRSTlMA89WUjysGveasGXIAAABtSURBVBjTZY9RDoAgDEM3GNoNFdT731WHxJDw/l6TZis5SQJzkEQfS1Q0NC7NV/ysnkQMxLevGNBE8ku5CyAUAD3cj2wVCMRAtVPd9w1gD0q2szvYK7iyWXOvCFrSHdLPlrr1s9Nj0+vTuGn+A6/yBvhDUyoxAAAAAElFTkSuQmCC');
+}
+.toast-font{
+	display:inline-block;
+	vertical-align:middle;
+	margin-left:10px;
+}
+/*----------------toast(end)--------------*/

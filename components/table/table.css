@@ -1,0 +1,32 @@
+/*---------------table.less(start)---------------*/
+.table-box {
+  overflow: auto;
+  margin: 8px; }
+  .table-box table {
+    width: 100%;
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white; }
+    .table-box table thead td {
+      text-align: center;
+      border-width: 0 1px 1px 0;
+      color: #818181;
+      background-color: #f6f6f6; }
+  .table-box th, .table-box td {
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: inherit;
+    word-break: keep-all;
+    text-align: left;
+    padding: 10px 8px; }
+  .table-box th {
+    font-weight: bold;
+    border-width: 0 0 2px 0; }
+  .table-box table, .table-box th, .table-box td {
+    border-color: #d1d1d1; }
+
+.table-striped tbody tr:nth-child(even) td {
+  background-color: #fafafa; }
+
+/*---------------table.less(end)---------------*/

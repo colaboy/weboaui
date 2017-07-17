@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>page</title>
+	<link rel="stylesheet" href="../../vendor//jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="dialog.css">
+</head>
+<body>
+    <input type="button" id="ID-BtnExit" value="弹出框"/>
+    <!--退出弹出框-->
+    <div id="ID-DialogExit" title="对话框标题">我是一个对话框</div>
+    <script src="../../vendor//jquery/jquery.min.js"></script>
+    <script src="../../vendor//jqueryui/jquery-ui.js"></script>
+    <script>
+    //退出dialog
+    $("#ID-DialogExit").dialog({
+        //dialogClass: "no-close",//添加样式，从而使关闭按钮隐藏
+        buttons: {
+            "确定": function() {
+                console.log("ok");
+            } ,
+            "取消": function(e) {
+                $("#ID-DialogExit").dialog("close");
+            }
+        },
+        overlay: {
+            backgroundColor: '#000',
+            opacity: 0.5
+        },
+        modal: true,
+        draggable:false,
+        autoOpen: false,
+        show: {
+            effect: "scale",
+            duration: 300
+        },
+        hide: {
+            effect: "scale",
+            duration: 300
+        },
+        open: function(e,ui){
+            console.log("打开回调");
+        }
+    });
+
+    $( "#ID-BtnExit" ).click(function() {
+        //显示dialog
+        $("#ID-DialogExit").dialog("open");
+    });
+    </script>
+</body>
+</html>

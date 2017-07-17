@@ -1,0 +1,60 @@
+/*----------------sidenav.less(start)--------------*/
+.sidenav-top {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #d4d7dc;
+  border-style: solid;
+  border-color: #cfd7df;
+  color: #555657;
+}
+
+.sidenav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidenav li a {
+  cursor:pointer;
+  position: relative;
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #cfd7df;
+  color: #555657;
+}
+
+.sidenav li a:before {
+  position: absolute;
+  display: none;
+  content: '';
+  width: 2px;
+  height: 100%;
+  left: -1px;
+  top: 0;
+  background-color: #20aeff;
+}
+
+.sidenav li a .icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.sidenav li a span {
+  display: block;
+  margin: 4px auto 0 auto;
+}
+
+.sidenav li a:hover, .sidenav li a.active {
+  color: #20aeff;
+  background-color: #f4f4f4;
+}
+
+.sidenav li a:hover:before, .sidenav li a.active:before {
+  display: block;
+}
+
+/*----------------sidenav.less(end)----------------*/

@@ -1,0 +1,429 @@
+/*----------------timepart.less(start)--------------*/
+.timepart-part {
+  display: block;
+  position: relative;
+  float: left;
+  width: 6.2%;
+  height: 100%;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  box-sizing: border-box;
+  border-color: #d1d1d1; }
+
+.timepart-part + .timepart-part {
+  width: 6.7%; }
+
+.timepart-time {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  width: 48px;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  text-align: center;
+  left: -24px;
+  color: #9e9e9e; }
+
+/*课程表总体框架*/
+.schedule {
+  width: 100%;
+  min-width: 800px;
+  border-color: #d1d1d1;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box; }
+
+.schedule-head {
+  display: table;
+  height: 70px;
+  width: 100%;
+  border-color: #d1d1d1;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  box-sizing: border-box; }
+
+.schedule-head .timepart-part {
+  border-width: 0 0 0 0; }
+
+.schedule-head .schedule-timepart {
+  border-width: 0; }
+
+.schedule-body {
+  display: block;
+  width: 100%;
+  box-sizing: border-box; }
+
+.schedule-row {
+  display: table;
+  width: 100%; }
+
+.schedule-name {
+  display: table-cell;
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: #d1d1d1; }
+
+.schedule-content {
+  display: table-cell;
+  width: 85%;
+  height: 100%;
+  box-sizing: border-box; }
+
+.schedule-content:after {
+  display: table;
+  content: " ";
+  clear: both;
+  zoom: 1; }
+
+.schedule-space {
+  display: block;
+  position: relative;
+  width: 6.2%;
+  height: 100%;
+  box-sizing: border-box;
+  float: left; }
+
+.schedule-timepart {
+  display: block;
+  position: relative;
+  width: 87.6%;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  border-width: 0 0 0 1px;
+  border-style: solid;
+  border-color: #d1d1d1; }
+
+.schedule-timepart-progress {
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: #d1d1d1; }
+
+.schedule-timepart-progress:hover {
+  color: white;
+  background-color: #1689fc;
+  border-color: #1689fc; }
+
+.schedule-timepart-progress:before, .schedule-timepart-progress:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  width: 1px;
+  height: 100%;
+  -webkit-transform-origin: 100% 50%;
+  background-color: #d1d1d1; }
+
+.schedule-timepart-progress:before {
+  left: -1px;
+  right: auto; }
+
+.schedule-timepart-progress:after {
+  left: auto;
+  right: -1px; }
+
+.schedule-pop {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: auto;
+  width: 300px;
+  padding: 0 10px;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid #1689fc;
+  line-height: 32px;
+  color: #333; }
+
+.schedule-pop table {
+  white-space: pre-wrap;
+  text-align: left;
+  width: 100%; }
+
+.schedule-pop table td {
+  vertical-align: top;
+  border-bottom: 1px solid #d1d1d1; }
+
+.schedule-timepart-progress:hover .schedule-pop {
+  display: block; }
+
+.schedule-timepart-progress[data-start="07:00"] {
+  left: 0%; }
+
+.schedule-timepart-progress[data-start="08:00"] {
+  left: 6.2%; }
+
+.schedule-timepart-progress[data-start="09:00"] {
+  left: 12.9%; }
+
+.schedule-timepart-progress[data-start="10:00"] {
+  left: 19.6%; }
+
+.schedule-timepart-progress[data-start="11:00"] {
+  left: 26.3%; }
+
+.schedule-timepart-progress[data-start="12:00"] {
+  left: 33%; }
+
+.schedule-timepart-progress[data-start="13:00"] {
+  left: 39.7%; }
+
+.schedule-timepart-progress[data-start="14:00"] {
+  left: 46.4%; }
+
+.schedule-timepart-progress[data-start="15:00"] {
+  left: 53.1%; }
+
+.schedule-timepart-progress[data-start="16:00"] {
+  left: 59.8%; }
+
+.schedule-timepart-progress[data-start="17:00"] {
+  left: 66.5%; }
+
+.schedule-timepart-progress[data-start="18:00"] {
+  left: 73.2%; }
+
+.schedule-timepart-progress[data-start="19:00"] {
+  left: 79.9%; }
+
+.schedule-timepart-progress[data-start="20:00"] {
+  left: 86.6%; }
+
+.schedule-timepart-progress[data-start="21:00"] {
+  left: 93.3%; }
+
+.schedule-timepart-progress[data-start="22:00"] {
+  left: 100%; }
+
+.schedule-timepart-progress[data-start="15:00"] .schedule-pop,
+.schedule-timepart-progress[data-start="15:30"] .schedule-pop,
+.schedule-timepart-progress[data-start="16:00"] .schedule-pop,
+.schedule-timepart-progress[data-start="16:30"] .schedule-pop,
+.schedule-timepart-progress[data-start="17:00"] .schedule-pop,
+.schedule-timepart-progress[data-start="17:30"] .schedule-pop,
+.schedule-timepart-progress[data-start="18:00"] .schedule-pop,
+.schedule-timepart-progress[data-start="18:30"] .schedule-pop,
+.schedule-timepart-progress[data-start="19:00"] .schedule-pop,
+.schedule-timepart-progress[data-start="19:30"] .schedule-pop,
+.schedule-timepart-progress[data-start="20:00"] .schedule-pop,
+.schedule-timepart-progress[data-start="20:30"] .schedule-pop,
+.schedule-timepart-progress[data-start="21:00"] .schedule-pop,
+.schedule-timepart-progress[data-start="21:30"] .schedule-pop,
+.schedule-timepart-progress[data-start="22:00"] .schedule-pop {
+  left: auto;
+  right: 0; }
+
+.schedule-timepart-progress[data-end="07:00"] {
+  right: 100%; }
+
+.schedule-timepart-progress[data-end="08:00"] {
+  right: 93.8%; }
+
+.schedule-timepart-progress[data-end="09:00"] {
+  right: 87.1%; }
+
+.schedule-timepart-progress[data-end="10:00"] {
+  right: 80.4%; }
+
+.schedule-timepart-progress[data-end="11:00"] {
+  right: 73.7%; }
+
+.schedule-timepart-progress[data-end="12:00"] {
+  right: 67%; }
+
+.schedule-timepart-progress[data-end="13:00"] {
+  right: 60.3%; }
+
+.schedule-timepart-progress[data-end="14:00"] {
+  right: 53.6%; }
+
+.schedule-timepart-progress[data-end="15:00"] {
+  right: 46.9%; }
+
+.schedule-timepart-progress[data-end="16:00"] {
+  right: 40.2%; }
+
+.schedule-timepart-progress[data-end="17:00"] {
+  right: 33.5%; }
+
+.schedule-timepart-progress[data-end="18:00"] {
+  right: 26.8%; }
+
+.schedule-timepart-progress[data-end="19:00"] {
+  right: 20.1%; }
+
+.schedule-timepart-progress[data-end="20:00"] {
+  right: 13.4%; }
+
+.schedule-timepart-progress[data-end="21:00"] {
+  right: 6.7%; }
+
+.schedule-timepart-progress[data-end="22:00"] {
+  right: 0%; }
+
+/*半点*/
+.schedule-timepart-progress[data-start="07:30"] {
+  left: 3.1%; }
+
+.schedule-timepart-progress[data-start="08:30"] {
+  left: 9.5%; }
+
+.schedule-timepart-progress[data-start="09:30"] {
+  left: 16.3%; }
+
+.schedule-timepart-progress[data-start="10:30"] {
+  left: 23%; }
+
+.schedule-timepart-progress[data-start="11:30"] {
+  left: 29.7%; }
+
+.schedule-timepart-progress[data-start="12:30"] {
+  left: 36.4%; }
+
+.schedule-timepart-progress[data-start="13:30"] {
+  left: 43.1%; }
+
+.schedule-timepart-progress[data-start="14:30"] {
+  left: 49.8%; }
+
+.schedule-timepart-progress[data-start="15:30"] {
+  left: 56.5%; }
+
+.schedule-timepart-progress[data-start="16:30"] {
+  left: 63.2%; }
+
+.schedule-timepart-progress[data-start="17:30"] {
+  left: 69.9%; }
+
+.schedule-timepart-progress[data-start="18:30"] {
+  left: 76.6%; }
+
+.schedule-timepart-progress[data-start="19:30"] {
+  left: 83.3%; }
+
+.schedule-timepart-progress[data-start="20:30"] {
+  left: 90%; }
+
+.schedule-timepart-progress[data-start="21:30"] {
+  left: 96.7%; }
+
+.schedule-timepart-progress[data-end="07:30"] {
+  right: 97.2%; }
+
+.schedule-timepart-progress[data-end="08:30"] {
+  right: 90.5%; }
+
+.schedule-timepart-progress[data-end="09:30"] {
+  right: 83.8%; }
+
+.schedule-timepart-progress[data-end="10:30"] {
+  right: 77.1%; }
+
+.schedule-timepart-progress[data-end="11:30"] {
+  right: 70.4%; }
+
+.schedule-timepart-progress[data-end="12:30"] {
+  right: 63.7%; }
+
+.schedule-timepart-progress[data-end="13:30"] {
+  right: 57%; }
+
+.schedule-timepart-progress[data-end="14:30"] {
+  right: 50.3%; }
+
+.schedule-timepart-progress[data-end="15:30"] {
+  right: 43.6%; }
+
+.schedule-timepart-progress[data-end="16:30"] {
+  right: 36.9%; }
+
+.schedule-timepart-progress[data-end="17:30"] {
+  right: 30.2%; }
+
+.schedule-timepart-progress[data-end="18:30"] {
+  right: 23.5%; }
+
+.schedule-timepart-progress[data-end="19:30"] {
+  right: 16.8%; }
+
+.schedule-timepart-progress[data-end="20:30"] {
+  right: 10.1%; }
+
+.schedule-timepart-progress[data-end="21:30"] {
+  right: 3.4%; }
+
+.schedule-date {
+  display: table;
+  width: 100%;
+  height: 60%; }
+
+.schedule-date-title {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 14px; }
+
+.schedule-date-title input[type="text"] {
+  display: inline-block;
+  width: 210px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border: none;
+  vertical-align: middle; }
+
+.schedule-date-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer; }
+
+.schedule-date-icon:hover {
+  color: #1689fc; }
+
+.schedule-time {
+  display: block;
+  width: 100%;
+  height: 40%;
+  box-sizing: border-box;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #d1d1d1; }
+
+.schedule-row {
+  height: 40px; }
+
+.schedule-row .schedule-timepart-progress {
+  line-height: 40px; }
+
+.schedule-row .schedule-timepart-progress p {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.schedule-row + .schedule-row .schedule-name {
+  border-width: 1px 1px 0 0; }
+
+.schedule-row + .schedule-row .timepart-part,
+.schedule-row + .schedule-row .schedule-timepart-progress {
+  border-width: 1px 1px 0 0; }
+
+/*----------------timepart.less(end)--------------*/

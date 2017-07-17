@@ -1,0 +1,57 @@
+/*手风琴控件-html4*/
+.accordion{
+	background-color: #F7F8FA;
+}
+.accordion,.accordion ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.accordion li{
+	cursor: pointer;
+}
+/*手风琴控件-标题*/
+.accordion-title{
+	position:relative;
+	padding: 15px 8px 15px 40px;
+	display:block;
+	text-decoration: none;
+}
+.accordion-title{
+	color:#333;
+}
+.accordion-title.active{
+	color:#333;
+	background-color:#E3F4FF;
+}
+
+/*手风琴控件-子级*/
+.accordion ul{
+	display:none;
+	padding-left: 10px;
+}
+
+/*左侧图标*/
+.accordion .accordion-licon{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	margin-top: -10px;
+	width: 20px;
+	height: 20px;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-color:transparent;
+}
+.accordion-icon-arrow{
+	background-image: url(arrow.png);
+}
+.accordion-title.active .accordion-icon-arrow{
+	background-image: url(arrow-active.png);
+}
+
+/*特色*/
+.accordion-chilren .accordion-title.active{
+	font-weight: 600;
+	background-color: transparent;
+}

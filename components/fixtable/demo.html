@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="fixtable.css" />
+<style type="text/css">
+  ::-webkit-scrollbar{
+    width: 6px;
+    background-color: #f5f5f5;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #bfbfbf;
+  }
+  ::-webkit-scrollbar-track{
+    background-color: #f5f5f5;
+  }
+
+  #mytable{
+    height: 200px;
+  }
+</style>
+</head>
+
+<body>
+<div class="fixTable" id="mytable">
+  <div class="fixTable-headContainer">
+    <table class="fixTable-headTable" cellspacing="0">
+      <thead>
+        <tr>
+          <td>列A</td>
+          <td>列B</td>
+          <td>列C</td>
+          <td>列D</td>
+          <td>列E</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+        </tr>
+        <tr>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+        </tr>
+        <tr>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+        </tr>
+        <tr>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+        </tr>
+        <tr>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+        </tr>
+        <tr>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="fixTable-bodyContainer">
+    <table class="fixTable-bodyTable" cellspacing="0">
+      <thead>
+        <tr>
+          <td>列A</td>
+          <td>列B</td>
+          <td>列C</td>
+          <td>列D</td>
+          <td>列E</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+        </tr>
+        <tr>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+        </tr>
+        <tr>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+        </tr>
+        <tr>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+        </tr>
+        <tr>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+        </tr>
+        <tr>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+          <td>我是内容</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.fixtable.js"></script>
+<script>
+function onBottom(e){
+  console.log(e);
+  //滚动完成，告诉滚动条
+  //e.isBottomRefreshing=false;
+}
+$.fixTable({
+  tableID:"mytable",
+  onBottomRefresh:onBottom
+});
+</script>
+</body>
+</html>

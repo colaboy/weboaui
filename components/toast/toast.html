@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Toast</title>
+	<link rel="stylesheet" href="toast.css">
+	<script src="toast.js"></script>
+</head>
+<body>
+	<input type="button" value="cancel" id="ID-ToastCancelBtn" />
+	<input type="button" value="info" id="ID-ToastInfoBtn" />
+	<input type="button" value="success" id="ID-ToastSuccessBtn" />
+	<script>
+		document.getElementById("ID-ToastCancelBtn").onclick=function(){
+			fh.toast({
+				type:"cancel",
+				content:"警告信息"
+			});
+	    };
+	    document.getElementById("ID-ToastInfoBtn").onclick=function(){
+	    	fh.toast({
+				type:"info",
+				content:"提示信息"
+			});
+	    };
+	    document.getElementById("ID-ToastSuccessBtn").onclick=function(){
+	    	fh.toast({
+				type:"success",
+				content:"成功信息"
+			});
+	    };
+	</script>
+</body>
+</html>

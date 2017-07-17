@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>timepart</title>
+	<link rel="stylesheet" href="../../vendor/jqueryui/jquery-ui.css">
+	<link rel="stylesheet" href="timepart.css">
+</head>
+<body style="background-color: white">
+	<div class="schedule">
+		<div class="schedule-head">
+			<div class="schedule-name">
+				<span style="font-size: 14px;">会议室</span>
+			</div>
+			<div class="schedule-content">
+				<div class="schedule-date">
+					
+					<span class="schedule-date-title">
+						<span class="schedule-date-icon" id="ID-DatePickerPrev">&lt;</span>
+						<span>
+							<input type="text" value="2016-11-30" readonly="true" id="ID-DatePicker" />
+						</span>
+						<span class="schedule-date-icon" id="ID-DatePickerNext">&gt;</span>
+					</span>
+					
+				</div>
+				<div class="schedule-time">
+					<div class="schedule-space">&nbsp;</div>
+					<div class="schedule-timepart">
+						<label class="timepart-part"><span class="timepart-time">07:00</span></label>
+						<label class="timepart-part"><span class="timepart-time">08:00</span></label>
+						<label class="timepart-part"><span class="timepart-time">09:00</span></label>
+						<label class="timepart-part"><span class="timepart-time">10:00</span></label>
+						<label class="timepart-part"><span class="timepart-time">11:00</span></label>
+						<label class="timepart-part"><span class="timepart-time">12:00</span></label>
+						<label class="timepart-part"><span class="timepart-time">13:00</span></label>
+						<label class="timepart-part"><span class="timepart-time">14:00</span></label>
+						<label class="timepart-part"><span class="timepart-time">15:00</span></label>
+						<label class="timepart-part"><span class="timepart-time">16:00</span></label>
+						<label class="timepart-part"><span class="timepart-time">17:00</span></label>
+						<label class="timepart-part"><span class="timepart-time">18:00</span></label>
+						<label class="timepart-part"><span class="timepart-time">19:00</span></label>
+						<label class="timepart-part"><span class="timepart-time">20:00</span></label>
+						<label class="timepart-part"><span class="timepart-time">21:00</span></label>
+					</div>
+					<div class="schedule-space"><span class="timepart-time">22:00</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="schedule-body">
+			<div class="schedule-row">
+				<div class="schedule-name">101会议室</div>
+				<div class="schedule-content">
+					<div class="schedule-space">&nbsp;</div>
+					<div class="schedule-timepart">
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<div class="schedule-timepart-progress" data-start="2017-2-24 07:00" data-end="2017-2-24 07:30">
+							<p>张三</p>
+							<div class="schedule-pop">
+								<table cellpadding="0" cellspacing="0">
+									<tr>
+										<td style="width: 90px;">预订人</td>
+										<td>张小琴</td>
+									</tr>
+									<tr>
+										<td>联系方式</td>
+										<td>18973738989</td>
+									</tr>
+									<tr>
+										<td>开始时间</td>
+										<td>08:30</td>
+									</tr>
+									<tr>
+										<td>结束时间</td>
+										<td>10:30</td>
+									</tr>
+									<tr>
+										<td>会议名称</td>
+										<td>港中旅移动启动项目</td>
+									</tr>
+									<tr>
+										<td>会议备注</td>
+										<td>议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="schedule-space">&nbsp;</div>
+				</div>
+			</div>
+			<div class="schedule-row">
+				<div class="schedule-name">102会议室</div>
+				<div class="schedule-content">
+					<div class="schedule-space">&nbsp;</div>
+					<div class="schedule-timepart">
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<div class="schedule-timepart-progress" data-start="2017-2-24 11:30" data-end="2017-2-24 20:30">
+							<p>李四</p>
+							<div class="schedule-pop">
+								<table cellpadding="0" cellspacing="0">
+									<tr>
+										<td style="width: 90px;">预订人</td>
+										<td>张小琴</td>
+									</tr>
+									<tr>
+										<td>联系方式</td>
+										<td>18973738989</td>
+									</tr>
+									<tr>
+										<td>开始时间</td>
+										<td>08:30</td>
+									</tr>
+									<tr>
+										<td>结束时间</td>
+										<td>10:30</td>
+									</tr>
+									<tr>
+										<td>会议名称</td>
+										<td>港中旅移动启动项目</td>
+									</tr>
+									<tr>
+										<td>会议备注</td>
+										<td>议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="schedule-space">&nbsp;</div>
+				</div>
+			</div>
+			<div class="schedule-row">
+				<div class="schedule-name">103会议室</div>
+				<div class="schedule-content">
+					<div class="schedule-space">&nbsp;</div>
+					<div class="schedule-timepart">
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<label class="timepart-part"></label>
+						<div class="schedule-timepart-progress" data-start="2017-2-24 21:00" data-end="2017-2-24 21:30">
+							<p>王五</p>
+							<div class="schedule-pop">
+								<table cellpadding="0" cellspacing="0">
+									<tr>
+										<td style="width: 90px;">预订人</td>
+										<td>张小琴</td>
+									</tr>
+									<tr>
+										<td>联系方式</td>
+										<td>18973738989</td>
+									</tr>
+									<tr>
+										<td>开始时间</td>
+										<td>08:30</td>
+									</tr>
+									<tr>
+										<td>结束时间</td>
+										<td>10:30</td>
+									</tr>
+									<tr>
+										<td>会议名称</td>
+										<td>港中旅移动启动项目</td>
+									</tr>
+									<tr>
+										<td>会议备注</td>
+										<td>议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注会议备注</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="schedule-space">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/jqueryui/jquery-ui.js"></script>
+	<!--设置datepicker为中文-->
+	<script src="../../vendor/jqueryui/jquery-ui.datepicker-zh-CN.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			/*日历控件*/
+			$("#ID-DatePicker").datepicker({
+				showButtonPanel:true
+			});
+			$("#ID-DatePicker").change(function(e){
+				console.log($(this).val());
+			});
+			$("#ID-DatePickerPrev").click(function(e){
+				var currentDate = $("#ID-DatePicker" ).datepicker("getDate");
+				currentDate.setDate(currentDate.getDate()-1);
+				$("#ID-DatePicker").datepicker( "setDate", currentDate );
+				$("#ID-DatePicker").trigger("change");
+			});
+			$("#ID-DatePickerNext").click(function(e){
+				var currentDate = $("#ID-DatePicker" ).datepicker("getDate");
+				currentDate.setDate(currentDate.getDate()+1);
+				$("#ID-DatePicker").datepicker( "setDate", currentDate );
+				$("#ID-DatePicker").trigger("change");
+			});
+			updateTimepart();
+		});
+		/*时间段控件*/
+		function updateTimepart(){
+			var currentDay=new Date($("#ID-DatePicker").val().replace(/-/g,"/"));
+			var sTime=new Date();
+			sTime.setHours("07");
+            sTime.setMinutes("00");
+            sTime.setSeconds(0,0);
+			var eTime=new Date();
+			eTime.setHours("22");
+            eTime.setMinutes("00");
+            eTime.setSeconds(0,0);
+			var hourMilliSecond = 60 * 60 * 1000;
+	        var rowMilliSecond = hourMilliSecond * 15;
+	        $(".schedule-timepart-progress").each(function(i,n){
+	        	var start=$(n).data("start").split(" ");
+	        	var startDate=new Date(start[0].replace(/-/g,"/"));
+	        	var startTime=new Date();
+	            startTime.setHours(start[1].split(":")[0]);
+	            startTime.setMinutes(start[1].split(":")[1]);
+	            startTime.setSeconds(0,0);
+
+	            var end=$(n).data("end").split(" ");
+	        	var endDate=new Date(end[0].replace(/-/g,"/"));
+	        	var endTime=new Date();
+	            endTime.setHours(end[1].split(":")[0]);
+	            endTime.setMinutes(end[1].split(":")[1]);
+	            endTime.setSeconds(0,0);
+
+	            var startTimeRatio=((startTime.getTime()-sTime.getTime())/rowMilliSecond).toString();
+            	var endTimeRatio=((endTime.getTime()-sTime.getTime())/rowMilliSecond).toString();
+            	var left=Math.round(startTimeRatio.replace(/\d+\./,"0.")*100);
+            	var right=Math.round(100-endTimeRatio.replace(/\d+\./,"0.")*100);
+	            //如果开始位置在最左边，则左边间距为0
+	            if(startTimeRatio%1===0){
+	                left=0;
+	            }
+	            //结束比例为整数时得减1
+	            if(endTimeRatio%1===0){
+	                right=0;
+	            }
+
+	            $(this).css("left",left+"%");
+	            $(this).css("right",right+"%");
+	            //如果结束位置偏右，则pop位置右对齐
+	            if(left>50){
+	            	$(".schedule-pop",this).css({left:"auto",right:"0"})
+	            }
+	            console.log("左:"+left+";右:"+right);
+	        });
+		}
+	</script>
+</body>
+</html>

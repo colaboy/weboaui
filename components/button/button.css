@@ -1,0 +1,17 @@
+/*----------------button.less(start)----------------*/
+.button {
+	cursor: pointer;
+	height: 30px;
+	background-color: white;
+	border:1px solid #ddd;
+	box-sizing: content-box;
+	outline: 0;
+}
+
+.button:hover {
+	color: white;
+	background-color: #20aeff;
+	border-color: #20aeff;
+}
+
+/*----------------button.less(end)----------------*/

@@ -1,0 +1,77 @@
+/*----------------page.less(start)----------------*/
+.container {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.page-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #20aeff;
+}
+
+.page-body {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+}
+
+.page-side, .page-main {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+}
+
+.page-side {
+  left: 0;
+  width: 86px;
+  border-width: 0 0 0 1px;
+  border-style: solid;
+  border-color: #cfd7df;
+  background-color: #dfe3e7;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.page-main {
+  right: 0;
+  left: 86px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  float: left;
+}
+
+.page-body, .page-header, .page-footer, .page-side, .page-main {
+  box-sizing: border-box;
+}
+
+/*----------------page.less(end)----------------*/

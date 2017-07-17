@@ -1,0 +1,95 @@
+/*jqueryui插件*/
+/*---------------jquery dialog.less(start)---------------*/
+.ui-dialog {
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+  padding: 10px 0;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+  margin: 0 16px 0 0;
+  padding: 0 20px;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 0;
+  background-color: #20aeff;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  border: 0;
+  background-color: transparent;
+}
+
+.ui-dialog .ui-dialog-titlebar-close .ui-icon-closethick {
+  background-image: none;
+  font-family: 'icomoon' !important;
+  text-indent: 0;
+  display: block;
+  height: 12px;
+  width: 12px;
+  line-height: 12px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -6px;
+  margin-left: -6px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close .ui-icon-closethick:before {
+  content: "\e906";
+}
+
+.ui-dialog .ui-dialog-titlebar-close:hover .ui-icon-closethick {
+  color: #86d3ff;
+}
+
+.ui-dialog.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+.ui-widget.ui-widget-content {
+  border: 0;
+}
+
+.ui-dialog-title {
+  margin: 0;
+  height: 15px;
+  line-height: 15px;
+  font-weight: normal;
+  color: white;
+}
+
+.ui-dialog-buttonpane {
+  background-color: #f0f0f0;
+}
+
+.ui-widget-overlay {
+  background-color: black !important;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.ui-dialog .ui-dialog-buttonpane button {
+  box-sizing: content-box;
+  cursor: pointer;
+  height: 30px;
+  background-color: white;
+  border:1px solid #ddd;
+  outline: 0;
+}
+
+.ui-dialog .ui-dialog-buttonpane button:hover, .button:active, .ui-dialog .ui-dialog-buttonpane button:active, .button:focus, .ui-dialog .ui-dialog-buttonpane button:focus {
+  color: white;
+  background-color: #20aeff;
+  border-color: #20aeff;
+}
+/*---------------jquery dialog.less(end)---------------*/

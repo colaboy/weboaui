@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>手风琴控件</title>
+  <link rel="stylesheet" href="accordion.css">
+</head>
+<body>
+  <ul class="accordion accordion-mutex">
+      <li>
+          <a class="accordion-title active"><i class="accordion-licon accordion-icon-arrow"></i>首页</a>
+      </li>
+      <li>
+          <a class="accordion-title"><i class="accordion-licon accordion-icon-arrow"></i>开放接口API说明</a>
+          <ul class="accordion-chilren">
+              <li><a class="accordion-title">部门接口</a></li>
+              <li><a class="accordion-title">员工帐号接口</a></li>
+              <li><a class="accordion-title">经销商信息接口</a></li>
+          </ul>
+      </li>
+  </ul>
+  <script src="../../vendor/jquery/jquery.min.js"></script>
+  <script src="accordion.js"></script>
+</body>
+</html>

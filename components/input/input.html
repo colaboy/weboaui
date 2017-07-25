@@ -7,10 +7,33 @@
 </head>
 <body>
 	<input type="text" class="input-text" />
-	<select name="" id="" class="input-select">
-		<option value="">1</option>
-		<option value="">2</option>
-		<option value="">3</option>
-	</select>
+	<span class="input-select-box">
+		<select name="" id="" class="input-select">
+			<option value="">1</option>
+			<option value="">2</option>
+			<option value="">3</option>
+		</select>
+	</span>
+	<script>
+var handler = function(e)
+{
+    e = e || window.event;
+    var target = e.target || e.srcElement;
+    if (target.tagName.toLowerCase() === 'a')
+    {
+        if (!e.preventDefault)
+        {//IE quirks
+            e.returnValue = false;
+            e.cancelBubble = true;
+        }
+        e.preventDefault();
+        e.stopPropagation();
+    }
+};
+if (window.addEventListener)
+    window.addEventListener('click', handler, false);
+else
+    window.attachEvent('onclick', handler);
+    </script>
 </body>
 </html>

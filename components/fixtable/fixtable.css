@@ -7,7 +7,6 @@
   bottom: 0;
   width: 100%;
   min-width: 600px;
-  overflow:hidden;
   font-size: 13px;
   
   color:#1a1a1a;
@@ -30,6 +29,7 @@
   position: absolute;
   left: 0;
   right: 0;
+  width: 100%;
 }
 .fixTable-headTable,.fixTable-bodyTable{
   border-collapse: separate;
@@ -40,6 +40,9 @@
   overflow: hidden;
 
   background-color:#E8EAEB;
+}
+.fixTable-headContainerInner{
+  width: 10000px;
 }
 .fixTable-headTable{
   

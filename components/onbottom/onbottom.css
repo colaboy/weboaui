@@ -1,0 +1,21 @@
+.bottom-box{
+  padding: 20px 0;text-align: center;
+}
+.bottom-box .bottom-icon{
+  width:20px;
+  height: 20px;
+  display: inline-block;vertical-align: middle;
+  background-image: url(btmloading.gif)
+}
+.bottom-box .bottom-font{
+  display:inline-block;vertical-align: middle;margin-left:10px;
+}
+.bottom-box .refreshed{
+  display: none;
+}
+.bottom-box.nodata .refreshing{
+  display: none;
+}
+.bottom-box.nodata .refreshed{
+  display: block;
+}
